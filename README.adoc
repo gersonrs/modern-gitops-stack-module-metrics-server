@@ -59,11 +59,11 @@ The following requirements are needed by this module:
 
 The following providers are used by this module:
 
+- [[provider_null]] <<provider_null,null>> (>= 3)
+
 - [[provider_argocd]] <<provider_argocd,argocd>> (>= 6)
 
 - [[provider_utils]] <<provider_utils,utils>> (>= 1)
-
-- [[provider_null]] <<provider_null,null>> (>= 3)
 
 === Resources
 
@@ -109,7 +109,7 @@ Description: Override of target revision of the application chart.
 
 Type: `string`
 
-Default: `"v2.8.0"`
+Default: `"v2.8.1"`
 
 ==== [[input_helm_values]] <<input_helm_values,helm_values>>
 
@@ -118,6 +118,14 @@ Description: Helm chart value overrides. They should be passed as a list of HCL 
 Type: `any`
 
 Default: `[]`
+
+==== [[input_enable_service_monitor]] <<input_enable_service_monitor,enable_service_monitor>>
+
+Description: Enable Prometheus ServiceMonitor in the Helm chart.
+
+Type: `bool`
+
+Default: `false`
 
 ==== [[input_app_autosync]] <<input_app_autosync,app_autosync>>
 
@@ -212,9 +220,9 @@ Description: ID to pass other modules in order to refer to this module as a depe
 [cols="a,a",options="header,autowidth"]
 |===
 |Name |Version
-|[[provider_null]] <<provider_null,null>> |>= 3
-|[[provider_argocd]] <<provider_argocd,argocd>> |>= 6
 |[[provider_utils]] <<provider_utils,utils>> |>= 1
+|[[provider_argocd]] <<provider_argocd,argocd>> |>= 6
+|[[provider_null]] <<provider_null,null>> |>= 3
 |===
 
 = Resources
@@ -255,13 +263,19 @@ Description: ID to pass other modules in order to refer to this module as a depe
 |[[input_target_revision]] <<input_target_revision,target_revision>>
 |Override of target revision of the application chart.
 |`string`
-|`"v2.8.0"`
+|`"v2.8.1"`
 |no
 
 |[[input_helm_values]] <<input_helm_values,helm_values>>
 |Helm chart value overrides. They should be passed as a list of HCL structures.
 |`any`
 |`[]`
+|no
+
+|[[input_enable_service_monitor]] <<input_enable_service_monitor,enable_service_monitor>>
+|Enable Prometheus ServiceMonitor in the Helm chart.
+|`bool`
+|`false`
 |no
 
 |[[input_app_autosync]] <<input_app_autosync,app_autosync>>
