@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.1](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/compare/v2.8.0...v2.8.1) (2025-10-18)
+
+
+### 📚 Documentation
+
+* add copilot instructions for AI agents ([61ba9cc](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/commit/61ba9cc12fbb325d200d75fa50c4f4365acb7951))
+
 ## [2.8.0](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/compare/v2.7.1...v2.8.0) (2025-10-18)
 
 
