@@ -1,6 +1,6 @@
 = modern-gitops-stack-module-metrics-server
 // Document attributes to replace along the document
-:metrics-server-chart-version: 3.12.1
+:metrics-server-chart-version: 3.12.2
 :original-repo-url: https://github.com/kubernetes-sigs/metrics-server
 
 A https://modern-gitops-stack.io[Modern GitOps Stack] module to deploy {original-repo-url}[Kubernetes Metrics Server].
