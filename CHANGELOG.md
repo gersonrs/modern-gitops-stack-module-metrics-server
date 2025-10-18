@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.8.0](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/compare/v2.7.1...v2.8.0) (2025-10-18)
+
+
+### 🚀 New Features
+
+* **chart:** patch update of dependencies on metrics-server chart ([85fcdcf](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/commit/85fcdcf0992030f0f40cf588873fb3421caee2e9))
+* **chart:** patch update of dependencies on metrics-server chart ([87c8ac9](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/commit/87c8ac97c34bf92b7b54e44eb33507c7296a8775))
+
 ## [2.7.1](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/compare/v2.7.0...v2.7.1) (2025-02-08)
 
 
