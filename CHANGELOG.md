@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.9.0](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/compare/v2.8.1...v2.9.0) (2026-01-23)
+
+
+### 🚀 New Features
+
+* update chart ([1e3403f](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/commit/1e3403f7a8a0beaf9df305535b0b175bf7a77123))
+* update chart ([200d8fb](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/commit/200d8fb113ae809ece30c4c11b646557d09ea1fe))
+
 ## [2.8.1](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/compare/v2.8.0...v2.8.1) (2025-10-18)
 
 
