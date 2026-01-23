@@ -109,7 +109,7 @@ Description: Override of target revision of the application chart.
 
 Type: `string`
 
-Default: `"v2.8.1"`
+Default: `"v2.9.0"`
 
 ==== [[input_helm_values]] <<input_helm_values,helm_values>>
 
@@ -220,9 +220,9 @@ Description: ID to pass other modules in order to refer to this module as a depe
 [cols="a,a",options="header,autowidth"]
 |===
 |Name |Version
-|[[provider_utils]] <<provider_utils,utils>> |>= 1
-|[[provider_argocd]] <<provider_argocd,argocd>> |>= 6
 |[[provider_null]] <<provider_null,null>> |>= 3
+|[[provider_argocd]] <<provider_argocd,argocd>> |>= 6
+|[[provider_utils]] <<provider_utils,utils>> |>= 1
 |===
 
 = Resources
@@ -263,7 +263,7 @@ Description: ID to pass other modules in order to refer to this module as a depe
 |[[input_target_revision]] <<input_target_revision,target_revision>>
 |Override of target revision of the application chart.
 |`string`
-|`"v2.8.1"`
+|`"v2.9.0"`
 |no
 
 |[[input_helm_values]] <<input_helm_values,helm_values>>
