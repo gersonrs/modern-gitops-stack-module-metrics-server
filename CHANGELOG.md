@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.10.0](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/compare/v2.9.0...v2.10.0) (2026-07-11)
+
+
+### 🚀 New Features
+
+* add namespace_labels variable to all modules ([f011a6a](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/commit/f011a6a7ba33a62871a20cfa9c004a52fc4063d7))
+* add namespace_labels variable to all modules ([414181d](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/commit/414181ddffa53b5378799ee84054b585af776082))
+
 ## [2.9.0](https://github.com/GersonRS/modern-gitops-stack-module-metrics-server/compare/v2.8.1...v2.9.0) (2026-01-23)
 
 
