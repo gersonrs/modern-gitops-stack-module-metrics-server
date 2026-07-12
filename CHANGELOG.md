@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.11.0](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/compare/v2.10.0...v2.11.0) (2026-07-12)
+
+
+### 🚀 New Features
+
+* adjust code ([c302744](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/commit/c302744916dc0b64de4f304556c2df0e911eb7d6))
+* adjust code ([068148d](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/commit/068148db2a86a3c0366fea15503a54b2c97e87f6))
+
 ## [2.10.0](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/compare/v2.9.0...v2.10.0) (2026-07-11)
 
 
