@@ -1,6 +1,6 @@
 = modern-gitops-stack-module-metrics-server
 // Document attributes to replace along the document
-:metrics-server-chart-version: 3.12.2
+:metrics-server-chart-version: 3.14.0
 :original-repo-url: https://github.com/kubernetes-sigs/metrics-server
 
 A https://modern-gitops-stack.io[Modern GitOps Stack] module to deploy {original-repo-url}[Kubernetes Metrics Server].
@@ -49,21 +49,23 @@ This module depends on Argo CD resources to be deployed, so it needs do be deplo
 
 The following requirements are needed by this module:
 
-- [[requirement_argocd]] <<requirement_argocd,argocd>> (>= 6)
+- [[requirement_terraform]] <<requirement_terraform,terraform>> (>= 1.9.0)
 
-- [[requirement_null]] <<requirement_null,null>> (>= 3)
+- [[requirement_argocd]] <<requirement_argocd,argocd>> (~> 7.18)
 
-- [[requirement_utils]] <<requirement_utils,utils>> (>= 1)
+- [[requirement_null]] <<requirement_null,null>> (~> 3.3)
+
+- [[requirement_utils]] <<requirement_utils,utils>> (~> 2.7)
 
 === Providers
 
 The following providers are used by this module:
 
-- [[provider_null]] <<provider_null,null>> (>= 3)
+- [[provider_null]] <<provider_null,null>> (~> 3.3)
 
-- [[provider_argocd]] <<provider_argocd,argocd>> (>= 6)
+- [[provider_argocd]] <<provider_argocd,argocd>> (~> 7.18)
 
-- [[provider_utils]] <<provider_utils,utils>> (>= 1)
+- [[provider_utils]] <<provider_utils,utils>> (~> 2.7)
 
 === Resources
 
@@ -210,9 +212,10 @@ Description: ID to pass other modules in order to refer to this module as a depe
 [cols="a,a",options="header,autowidth"]
 |===
 |Name |Version
-|[[requirement_argocd]] <<requirement_argocd,argocd>> |>= 6
-|[[requirement_null]] <<requirement_null,null>> |>= 3
-|[[requirement_utils]] <<requirement_utils,utils>> |>= 1
+|[[requirement_terraform]] <<requirement_terraform,terraform>> |>= 1.9.0
+|[[requirement_argocd]] <<requirement_argocd,argocd>> |~> 7.18
+|[[requirement_null]] <<requirement_null,null>> |~> 3.3
+|[[requirement_utils]] <<requirement_utils,utils>> |~> 2.7
 |===
 
 = Providers
@@ -220,9 +223,9 @@ Description: ID to pass other modules in order to refer to this module as a depe
 [cols="a,a",options="header,autowidth"]
 |===
 |Name |Version
-|[[provider_argocd]] <<provider_argocd,argocd>> |>= 6
-|[[provider_utils]] <<provider_utils,utils>> |>= 1
-|[[provider_null]] <<provider_null,null>> |>= 3
+|[[provider_null]] <<provider_null,null>> |~> 3.3
+|[[provider_argocd]] <<provider_argocd,argocd>> |~> 7.18
+|[[provider_utils]] <<provider_utils,utils>> |~> 2.7
 |===
 
 = Resources
