@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/compare/v2.11.0...v3.0.0) (2026-11-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* provider major bumps and a stricter Terraform baseline; consumers must run `terraform init -upgrade`.
+
+### 🚀 New Features
+
+* upgrade charts, providers and Terraform baseline ([#23](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/issues/23)) ([746c266](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/commit/746c266548bd1992e4a52706adf877f0e05ecab1))
+
 ## [2.11.0](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/compare/v2.10.0...v2.11.0) (2026-07-12)
 
 
