@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/compare/v3.0.0...v4.0.0) (2026-11-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* enable the ServiceMonitor by default ([#25](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/issues/25))
+
+### 🚀 New Features
+
+* enable the ServiceMonitor by default ([#25](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/issues/25)) ([5e4ff0e](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/commit/5e4ff0ecf492ca85546de9daf5376a2cb052f74e))
+
 ## [3.0.0](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/compare/v2.11.0...v3.0.0) (2026-11-20)
 
 
