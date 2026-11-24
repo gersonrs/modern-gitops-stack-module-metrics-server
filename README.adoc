@@ -3,46 +3,51 @@
 :metrics-server-chart-version: 3.14.0
 :original-repo-url: https://github.com/kubernetes-sigs/metrics-server
 
-A https://modern-gitops-stack.io[Modern GitOps Stack] module to deploy {original-repo-url}[Kubernetes Metrics Server].
+A https://modern-gitops-stack.io[Modern GitOps Stack] module to deploy Metrics Server, which exposes resource metrics through the Kubernetes metrics API.
 
-The Metrics Server chart used by this module is shipped in this repository as well, in order to avoid any unwanted behaviors caused by unsupported versions. 
+The metrics-server chart used by this module is shipped in this repository as well, in order to avoid any unwanted behaviors caused by unsupported versions.
 
 [cols="1,1,1",options="autowidth,header"]
 |===
 |Current Chart Version |Original Repository |Default Values
-|*{metrics-server-chart-version}* |{original-repo-url}/tree/master/charts/metrics-server[Chart] |https://artifacthub.io/packages/helm/metrics-server/metrics-server/{metrics-server-chart-version}?modal=values[`values.yaml`]
+|*3.14.0* |https://github.com/kubernetes-sigs/metrics-server/tree/main/charts/metrics-server[metrics-server] |https://artifacthub.io/packages/helm/metrics-server/metrics-server/3.14.0?modal=values[`values.yaml`]
 |===
-
-NOTE: This module is only used on platforms that do not install Metrics Server by default, such as Amazon EKS and KinD.
 
 == Usage
 
-This module can be declared by adding the following block on your Terraform configuration:
+This module can be declared by adding the following block to your Terraform configuration:
 
 [source,terraform]
 ----
 module "metrics-server" {
   source = "git::https://github.com/GersonRS/modern-gitops-stack-module-metrics-server.git?ref=<RELEASE>"
 
-  argocd_namespace = module.argocd_bootstrap.argocd_namespace
-
-  app_autosync = local.app_autosync
-
-  kubelet_insecure_tls = false # By default is false, but you can enable it, for example on KinD.
+  cluster_name   = local.cluster_name
+  base_domain    = local.base_domain
+  subdomain      = local.subdomain
+  cluster_issuer = local.cluster_issuer
+  app_autosync   = local.app_autosync
 
   dependency_ids = {
-    argocd = module.argocd_bootstrap.id
+    argocd         = module.argocd.id
+    crds_bootstrap = module.crds_bootstrap.id
   }
 }
 ----
+
+The application is deployed to the `kube-system` namespace.
 
 == Technical Reference
 
 === Dependencies
 
-==== `module.argocd_bootstrap.id`
+==== `module.argocd.id`
 
-This module depends on Argo CD resources to be deployed, so it needs do be deployed after the module `argocd_bootstrap`.
+Argo CD must exist before the application can be created.
+
+==== `module.crds_bootstrap.id`
+
+Its ServiceMonitor needs the Prometheus Operator CRDs, which crds_bootstrap installs before any application.
 
 // BEGIN_TF_DOCS
 === Requirements
