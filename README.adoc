@@ -66,11 +66,11 @@ The following requirements are needed by this module:
 
 The following providers are used by this module:
 
-- [[provider_null]] <<provider_null,null>> (~> 3.3)
+- [[provider_utils]] <<provider_utils,utils>> (~> 2.7)
 
 - [[provider_argocd]] <<provider_argocd,argocd>> (~> 7.18)
 
-- [[provider_utils]] <<provider_utils,utils>> (~> 2.7)
+- [[provider_null]] <<provider_null,null>> (~> 3.3)
 
 === Resources
 
@@ -116,7 +116,7 @@ Description: Override of target revision of the application chart.
 
 Type: `string`
 
-Default: `"v4.0.0"`
+Default: `"v4.0.1"`
 
 ==== [[input_helm_values]] <<input_helm_values,helm_values>>
 
@@ -271,7 +271,7 @@ Description: ID to pass other modules in order to refer to this module as a depe
 |[[input_target_revision]] <<input_target_revision,target_revision>>
 |Override of target revision of the application chart.
 |`string`
-|`"v4.0.0"`
+|`"v4.0.1"`
 |no
 
 |[[input_helm_values]] <<input_helm_values,helm_values>>

@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.1](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/compare/v4.0.0...v4.0.1) (2026-11-24)
+
+
+### 📚 Documentation
+
+* add usage and dependencies to the module documentation ([#27](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/issues/27)) ([0a59b89](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/commit/0a59b89fb6d60792e80e0d2cf79a5893dd2c42fc))
+
 ## [4.0.0](https://github.com/gersonrs/modern-gitops-stack-module-metrics-server/compare/v3.0.0...v4.0.0) (2026-11-24)
 
 
